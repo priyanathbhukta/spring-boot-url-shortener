@@ -1,10 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout}">
 <head>
     <meta charset="UTF-8">
-    <title>About</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
 </head>
 <body>
-<h1>About URL Shortener</h1>
+<div layout:fragment="content">
+    <div class="jumbotron bg-light p-5 rounded-3 my-4">
+        <h1 class="display-4">About Our URL Shortener</h1>
+        <p class="lead">This application is built as a comprehensive learning project to demonstrate key concepts in Spring Boot web development, including database interactions, security, and dynamic page rendering.</p>
+        <hr class="my-4">
+        <p>Our goal is to provide a reliable service for shortening long URLs, making them easier to share and manage across various platforms. We aim for simplicity, efficiency, and a great user experience.</p>
+        <p>Explore the features, dive into the code, and feel free to contribute!</p>
+    </div>
+</div>
 </body>
 </html>
