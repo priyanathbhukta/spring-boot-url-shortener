@@ -1,0 +1,11 @@
+INSERT INTO users (email, password, name, role)
+VALUES('admin@gmail.com','admin','Administrator','ROLE_ADMIN'),
+      ('user@gmail.com','user','EndUser','ROLE_USER');
+
+
+INSERT INTO short_urls (short_key, original_url, created_by, created_at, expires_at, is_private, click_count)
+VALUES
+    ('rs1Aed', 'https://www.amazon.in/OnePlus-Bluetooth-Adaptive-Cancellation-Charging/dp/B0CRH561RC/ref=pd_sbs_d_sccl_2_2/262-4858222-3479640?pd_rd_w=ELVFS&content-id=amzn1.sym.6d240404-f8ea-42f5-98fe-bf3c8ec77086&pf_rd_p=6d240404-f8ea-42f5-98fe-bf3c8ec77086&pf_rd_r=DT1PYS7VH18VP50KQNCJ&pd_rd_wg=mfSlY&pd_rd_r=43db09c8-e5ff-4fa2-b76b-950c32f1abf8&pd_rd_i=B0CRH561RC&th=1', 1, '2025-08-01 10:15:00', NULL, false, 0),
+    ('ab3Xyz', 'https://www.amazon.in/OnePlus-Real-time-Adaptive-Dual-Device-connectivity/dp/B0FCMPJQ1J/ref=sr_1_1?_encoding=UTF8&content-id=amzn1.sym.7db31cb9-0df8-4370-a351-4f74924c1c7a&dib=eyJ2IjoiMSJ9.5mLG6mw813nHUSB_s9SLJlYGlO-ZzY4HM556RhPExJW9PkW4a4HU85lccIOBUIs1mz4VmVhVJno6bIfB6uSAmgsp_rInOwXpsF4do3mohg5rob67gPOfzMRwqdgRY_uoKFPU5a-ZYQPSUEb6XhI3KfrpqluYa21eHSX13w3zbr1b30oLGUEUtNcHrpEbwJ3m1vWCkeo0ybsWUHyUx_V5CnaBr5bm0y-4_ZHA5v_fHp4Qk8CxowML_6nLc1ER53jVp_wYO6UKifeTgOXGUvGF7GBhtzOX3oT0TQNDMLpw8Kc.DS82EEck41H8TbR4QunFSDahMpEDJzsF4iv3gxR3V1U&dib_tag=se&pd_rd_r=253f5975-88d5-4b99-abfe-fedadd418ff0&pd_rd_w=eT4Rw&pd_rd_wg=hZSCQ&qid=1755019150&refinements=p_n_condition-type%3A8609960031%2Cp_n_deal_type%3A26921226031&s=electronics&sr=1-1', 2, '2025-07-28 14:20:00', NULL, false, 0),
+    ('qwe9Lp', 'https://www.amazon.in/Acer-Processor-Graphics-Win11Home-AL15G-53/dp/B0DFHFCS4Y/?_encoding=UTF8&pd_rd_w=OW19o&content-id=amzn1.sym.896d5395-8432-4167-910b-7f29905b1010&pf_rd_p=896d5395-8432-4167-910b-7f29905b1010&pf_rd_r=QCJHZXMDECGV03E8MDTH&pd_rd_wg=x41w2&pd_rd_r=76f864fa-2782-4ffe-8716-eab38c43e71f&ref_=pd_hp_d_atf_dealz_sv', 1, '2025-08-05 09:45:00', NULL, false, 0),
+    ('lmN7Op', 'https://www.amazon.in/Lenovo-Graphics-5500Mhz-Windows-Warranty/dp/B0F29HNJL1/?_encoding=UTF8&pd_rd_w=fNAkG&content-id=amzn1.sym.55ef13bc-aa7d-42f7-9e12-2fa5c10dd4b6%3Aamzn1.symc.752cde0b-d2ce-4cce-9121-769ea438869e&pf_rd_p=55ef13bc-aa7d-42f7-9e12-2fa5c10dd4b6&pf_rd_r=DD1YNG6TXVYM8AMC6V29&pd_rd_wg=jOt12&pd_rd_r=b3b66807-c848-47f7-8161-fa0eeca9873f&ref_=pd_hp_d_atf_ci_mcx_mr_ca_hp_atf_d&th=1', 2, '2025-08-08 16:50:00', NULL, false, 0);
