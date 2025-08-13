@@ -14,6 +14,28 @@
         <p class="lead">A simple URL shortener service. Create short, easy-to-share links.</p>
     </div>
 
+    <div class="card mt-4">
+        <div class="card-header">
+            <h5 class="card-title mb-0">Create a Short URL</h5>
+        </div>
+        <div class="card-body">
+            <form th:action="@{/short-urls}" method="post"
+                  th:object="${createShortUrlForm}">
+                <div class="mb-3">
+                    <label for="originalUrl" class="form-label">Original URL</label>
+                    <input type="text" class="form-control" id="originalUrl"
+                           th:field="*{originalUrl}"
+                           placeholder="https://example.com/my-long-url">
+                    <div class="text-danger"
+                         th:if="${#fields.hasErrors('originalUrl')}"
+                         th:errors="*{originalUrl}"></div>
+                </div>
+                <button type="submit" class="btn btn-primary">Shorten URL</button>
+            </form>
+        </div>
+    </div>
+
+
     <h2 class="mt-5">Public Shortened URLs</h2>
     <div th:if="${shortUrls.isEmpty()}" class="alert alert-info">
         No public URLs have been created yet.
